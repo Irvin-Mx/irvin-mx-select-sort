@@ -1,5 +1,43 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: green;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    /* height: 100vh; */
 }
+
+.card{
+    width: 7vw;
+    height: 15vh;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-top{
+    background-color: whitesmoke;
+}
+
+.card-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+}
+
+.card-bottom{
+    display: flex;
+    justify-content: flex-end;
+    background-color: whitesmoke;
+}
+
+.rotated{
+    transform: rotate(180deg);
+} 
