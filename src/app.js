@@ -73,7 +73,7 @@ window.onload = function () {
 
 
   const logArray = []
-  let divCardLogContainer = document.querySelector("#random-user-cards")
+  let divCardLogContainer = document.querySelector("#random-user-cards-log")
 
   //Order random cards array
   const bubbleSort = (arr) => {

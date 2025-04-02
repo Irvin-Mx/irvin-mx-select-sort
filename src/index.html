@@ -5,6 +5,7 @@
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Fontawesome is our recomended library for icons -->
     <link
@@ -14,7 +15,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="container-fluid d-flex flex-column bg-success">
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
     <div>
       <label for=""></label>
@@ -23,20 +24,19 @@
       <input id="sort-button" type="button" value="Sort">
     </div>
 
-    <br>
-    
-    <div id="random-user-cards">
+    <div class="bg-warning d-flex " id="random-user-cards">
     
     </div>
 
-    <br>
-    <div >
+    <div class="bg-danger">
       <h3>Bubble log</h3>
       <div id="random-user-cards-log">
-
       </div>
     </div>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>
   </body>
