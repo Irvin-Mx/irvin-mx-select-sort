@@ -8,13 +8,12 @@ import "./assets/img/4geeks.ico";
 window.onload = function () {
   const randomCardsArray = []
   const iconsObjectsArrays = [{ icon: "♦", color: "red" }, { icon: "♥", color: "red" }, { icon: "♠", color: "black" }, { icon: "♣", color: "black" }]
-  //write your code here
 
-  //Step1: Retreive the input element
+  //Retreive the input element
   const numberOfCardsInputElement = document.querySelector("#number-of-cards");
   const drawButtonElement = document.querySelector("#draw-button")
 
-  //step2: What will this input listen to? Add an event listener to the input element
+  //Add an event listener to the input element
   drawButtonElement.addEventListener("click", function (event) {
     let userInputNumberOfCards = numberOfCardsInputElement.value
 
@@ -69,7 +68,7 @@ window.onload = function () {
     })
 
   })
-  
+   
 
 
   const logArray = []
@@ -100,7 +99,7 @@ window.onload = function () {
       }
       wall--; //disminuir la pared para optimizar
     }
-    console.log(logArray)
+    console.log( )
     return arr;
   };
 
@@ -114,15 +113,22 @@ window.onload = function () {
     const sortedCardsArrayCopy = bubbleSort(randomCardsArrayCopy)
     console.log(sortedCardsArrayCopy)
 
+
+    //[{},{},{}]
     //loop thru array of logs
     logArray.forEach((item)=>{
       console.log(item)
+
+      let createdContainer = document.createElement("div")
+      createdContainer.className = "border m-2 d-flex"
+      
+
       item.forEach((item2)=>{
-        console.log(item2)
+        // console.log(item2)
         //draw card in dom
         
 
-          divCardLogContainer.innerHTML += `<div class="card">
+        createdContainer.innerHTML += `<div class="card bg-primary border ">
              <div class="card-top">
               <span class="icon-span" id="random-icon">
                 ${item2.icon}
@@ -138,10 +144,36 @@ window.onload = function () {
                 ${item2.icon}
                 </span>
              </div>
-         </div>`
+         </div>
+          `})
+
+      divCardLogContainer.appendChild(createdContainer) //+= "<div>hello</div>/n"
+
+
+
+      // item.forEach((item2)=>{
+      //   // console.log(item2)
+      //   //draw card in dom
         
 
-      })
+      //     divCardLogContainer.innerHTML += `<div class="card bg-primary border">
+      //        <div class="card-top">
+      //         <span class="icon-span" id="random-icon">
+      //           ${item2.icon}
+      //         </span>
+      //        </div>
+    
+      //        <div class="card-number">
+      //         <span class="number-span" id="random-number">${item2.number}</span>
+      //        </div>
+    
+      //        <div class="card-bottom">
+      //           <span class="icon-span rotated">
+      //           ${item2.icon}
+      //           </span>
+      //        </div>
+      //    </div>
+      //     `})
     })
   })
 
