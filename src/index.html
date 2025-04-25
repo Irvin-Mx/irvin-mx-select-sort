@@ -14,23 +14,26 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+
+    <!-- Css styles -->
+     <link rel="stylesheet" href="style.css">
   </head>
-  <body class="container-fluid d-flex flex-column bg-success">
+  <body class="d-flex flex-column bg-success">
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div>
-      <label for=""></label>
-      <input type="text" name="usrer-input-card-numbers" id="number-of-cards">
-      <input id="draw-button" type="button" value="Draw">
-      <input id="sort-button" type="button" value="Sort">
+    <div class="d-flex align-items-center  my-height">
+      <label class="fw-bolder fs-3"  for="">Original</label>
+      <input class="h-75 col-2 mx-1 fs-3 fw-semibold" type="text" name="usrer-input-card-numbers" id="number-of-cards">
+      <input class="h-75  col-1 fs-4 fw-bold text-danger" id="draw-button" type="button" value="Draw">
+      <input class="h-75  col-1 fs-4 fw-bold text-warning " id="sort-button" type="button" value="Sort">
     </div>
 
-    <div class="bg-warning d-flex " id="random-user-cards">
+    <div class=" d-flex " id="random-user-cards">
     
     </div>
 
-    <div class="bg-danger">
-      <h3>Bubble log</h3>
-      <div class="d-flex flex-column border" id="random-user-cards-log">
+    <div class="">
+      <h3 class="fw-bold">Bubble log</h3>
+      <div class="d-flex flex-column" id="random-user-cards-log">
       </div>
     </div>
 

@@ -40,4 +40,17 @@ body{
 
 .rotated{
     transform: rotate(180deg);
-} 
+}
+
+
+.my-height{
+    height: 4rem;
+}
+
+.individual-log-congainer-div:hover{
+    transition: ease .7s;
+}
+
+.individual-log-congainer-div:hover{
+    background-color: #010172
+}
